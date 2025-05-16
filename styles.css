@@ -80,7 +80,7 @@ body {
 
 .navbar>.left>.logo>h1 {
     width: auto;
-    max-width: 8rem;
+    max-width: 10rem;
     flex: 1;
     color: var(--gold-metallic);
     font-weight: 900;
@@ -317,6 +317,41 @@ section {
     margin-bottom: 4rem;
 }
 
+section#eligibility>.grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
+}
+
+section#eligibility>.grid>.entry {
+    flex: 1;
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 8px solid var(--timberwolf); */
+    border-radius: 0.25rem;
+    position: relative;
+}
+
+section#eligibility>.grid>.entry>svg {
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    fill: var(--timberwolf);
+}
+
+section#eligibility>.grid>.entry>div {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+section#eligibility>.grid>.entry>div>p {
+    max-width: 15rem;
+}
+
 section#committee>.members {
     margin-top: 4rem;
     display: grid;
@@ -446,6 +481,10 @@ section#join > a.button {
 
     .navbar>.left>button#expand-nav {
         display: flex;
+    }
+
+    section#eligibility>.grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     section#committee>.members {
