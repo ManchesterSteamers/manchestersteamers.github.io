@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Website Template</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="caurosel.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-container">
+            <div class="navbar">
+                <div class="left">
+                    <a class="logo" href="/">
+                        <div class="wrapper">
+                            <img src="/assets/logo-fullsize.png">
+                        </div>
+                        <h1>MANCHESTER STEAMERS</h1>
+                    </a>
+
+                    <button id="expand-nav" onclick="toggleNavBarView()"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" />
+                        </svg></button>
+                </div>
+
+                <div class="nav-links-container">
+
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#eligibility">Eligibility</a></li>
+                        <li><a href="#committee">Committee</a></li>
+                        <li><a href="https://form.jotform.com/251352987669070">Register <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h6q.425 0 .713.288T12 4t-.288.713T11 5H5v14h14v-6q0-.425.288-.712T20 12t.713.288T21 13v6q0 .825-.587 1.413T19 21zM19 6.4L10.4 15q-.275.275-.7.275T9 15t-.275-.7t.275-.7L17.6 5H15q-.425 0-.712-.288T14 4t.288-.712T15 3h5q.425 0 .713.288T21 4v5q0 .425-.288.713T20 10t-.712-.288T19 9z" />
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="welcome">
+        <div class="caurosel">
+            <img src="/assets/bg/IMGC4580-min.jpg" class="active">
+            <img src="/assets/bg/DSC_5899.jpg">
+            <img src="/assets/bg/DSC_6229.jpg">
+        </div>
+        <div class="dot-overlay"></div>
+
+        <div class="container">
+            <div class="text">
+                <h1>SIGN UP TODAY.</h1>
+
+                <a class="button" href="https://form.jotform.com/251352987669070">
+                    REGISTER <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z" />
+                    </svg></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <main>
+            <section id="about">
+                <h1 class="styled">About</h1>
+
+            </section>
+
+            <section id="eligibility">
+                <h1 class="styled">Eligibility</h1>
+                <p class="subtitle">Find out the requirements for joining us.</p>
+
+
+
+            </section>
+
+            <section id="committee">
+                <h1 class="styled">The Committee</h1>
+                <p class="subtitle">Meet the team behind it.</p>
+
+                <div class="members">
+                    <div class="member">
+                        <div class="icon">
+                            <img src="/assets/members/grob.avif">
+                            <div class="dot-overlay" style="opacity: 0.2;"></div>
+                        </div>
+                        <div class="info">
+                            <h1 class="title styled gold">CHAIR</h1>
+                            <p>Alexander Grob</p>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <div class="icon">
+                            <img src="/assets/members/oli.avif">
+                            <div class="dot-overlay" style="opacity: 0.2;"></div>
+                        </div>
+                        <div class="info">
+                            <h1 class="title styled gold">VICE CHAIR</h1>
+                            <p>Oliver Taylor</p>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <div class="icon">
+                            <img src="/assets/members/john.avif">
+                            <div class="dot-overlay" style="opacity: 0.2;"></div>
+                        </div>
+                        <div class="info">
+                            <h1 class="title styled gold">SECRETARY</h1>
+                            <p>John McSwiggan</p>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <div class="icon">
+                            <img src="/assets/members/meng.avif">
+                            <div class="dot-overlay" style="opacity: 0.2;"></div>
+                        </div>
+                        <div class="info">
+                            <h1 class="title styled gold">TREASURER</h1>
+                            <p>Xavier Meng</p>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <div class="icon">
+                            <img src="/assets/members/matt.avif">
+                            <div class="dot-overlay" style="opacity: 0.2;"></div>
+                        </div>
+                        <div class="info">
+                            <h1 class="title styled gold">FIXTURES & MEMBERSHIP</h1>
+                            <p>Matthew McConville</p>
+                        </div>
+                    </div>
+
+
+                    <div class="member">
+                        <div class="icon">
+                            <img src="/assets/members/ellen.avif">
+                            <div class="dot-overlay" style="opacity: 0.2;"></div>
+                        </div>
+                        <div class="info">
+                            <h1 class="title styled gold">SOCIAL & KIT SECRETARY</h1>
+                            <p>Ellen Tyrer</p>
+                        </div>
+                    </div>
+
+                    <div></div>
+
+                    <div class="member">
+                        <div class="icon">
+                            <img src="/assets/members/raph.avif">
+                            <div class="dot-overlay" style="opacity: 0.2;"></div>
+                        </div>
+                        <div class="info">
+                            <h1 class="title styled gold">VICE TREASURER</h1>
+                            <p>Raph Noyer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="footer-container">
+        <footer>
+            <p>&copy; 2025 Manchester Steamers. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
