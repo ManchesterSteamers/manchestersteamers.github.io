@@ -137,6 +137,11 @@ body {
     transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+
+.navbar>.nav-links-container>ul.nav-links .instagram {
+    fill: var(--timberwolf);
+}
+
 a {
     text-decoration: none !important;
     color: inherit;
@@ -195,6 +200,10 @@ a {
     letter-spacing: 3px;
 }
 
+.welcome>.container>.text>a.button {
+    text-shadow: none;
+}
+
 div.main-container {
     display: flex;
     align-items: center;
@@ -223,6 +232,17 @@ footer {
     width: min(100%, 960px);
     box-sizing: border-box;
     padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > .socials {
+    display: flex;
+    gap: 1rem;
+}
+
+footer>.socials .instagram {
+    fill: var(--rich-black)
 }
 
 h1 {
@@ -261,6 +281,7 @@ p.subtitle {
     align-items: center;
     gap: 0.25rem;
     width: min-content;
+    box-sizing: border-box;
 }
 
 .button:hover {
@@ -280,7 +301,7 @@ section#committee>.members {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0rem 2rem;
+    gap: 2rem 2rem;
 }
 
 section#committee>.members>div.member {
@@ -289,6 +310,7 @@ section#committee>.members>div.member {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 section#committee>.members>div.member>.icon {
@@ -326,7 +348,8 @@ section#committee>.members>div.member>.info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(-100%);
+    bottom: 0;
+    position: absolute;
 }
 
 section#committee>.members>div.member>.info>h1 {
@@ -348,6 +371,16 @@ section#committee>.members>div.member>.info>p {
     background-size: 5px 5px;
     opacity: 0.5;
     mix-blend-mode: multiply;
+}
+
+section#join > a.button {
+    margin-top: 2rem;
+    width: 100%;
+    height: 5rem;
+    justify-content: center;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 3px;
 }
 
 @media only screen and (max-width: 960px) {
