@@ -425,7 +425,7 @@ section#committee>.members>div.member>.info>p {
     pointer-events: none;
     background-image: radial-gradient(circle, var(--rich-black) 2px, transparent 3px);
     background-size: 5px 5px;
-    opacity: 0.5;
+    opacity: 0.25;
     mix-blend-mode: multiply;
 }
 
