@@ -54,14 +54,21 @@ div.button-group-selectable-one.done>button.selectable {
 
 button.selectable {
     flex: 1;
-    background-color: transparent;
-    color: var(--gunmetal);
-    border: 2px solid var(--gunmetal);
-    padding: 0.5rem 2rem;
+    background-color: var(--gunmetal);
+    color: var(--timberwolf);
+    border: 2px solid var(--timberwolf);
+    padding: 0.5rem 0rem;
     border-radius: 0.25rem;
     font-size: 1.1rem;
     font-weight: 200;
     cursor: pointer;
+    transition: 0.1s all ease-in-out;
+}
+
+button.selectable:hover {
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    transition: 0.1s all ease-in-out;
 }
 
 button.selectable.active {
