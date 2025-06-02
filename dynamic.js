@@ -43,4 +43,4 @@ document.querySelectorAll('a[data-link]').forEach((link) => {
 
 window.addEventListener('popstate', updateView);
 
-// updateView();
+updateView();
