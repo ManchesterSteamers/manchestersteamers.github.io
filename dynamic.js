@@ -28,6 +28,8 @@ function updateView() {
         pageTitle: "Steamers | Error 404"
     };
 
+    console.log(sectionConfig, path)
+
     const section = document.getElementById(sectionConfig.sectionElementId);
     if (section) {
         section.classList.add('active');
