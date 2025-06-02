@@ -1,0 +1,215 @@
+.register-options {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
+}
+
+.register-options>.option {
+    padding: 2rem;
+    border-radius: 0.25rem;
+    background-color: var(--gunmetal);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.register-options>.option span {
+    background-color: var(--rich-black);
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+}
+
+a.link {
+    color: var(--gold);
+    text-decoration: underline !important;
+}
+
+div#reg-form {
+    margin-top: 1rem;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    padding-bottom: 10rem;
+}
+
+div.button-group-selectable-one {
+    flex: 1;
+    display: flex;
+    gap: 0.5rem;
+}
+
+div.button-group-selectable-one.done {
+    opacity: 0.3;
+}
+
+div.button-group-selectable-one.done>button.selectable {
+    /* Doesnt work with pointer-events none */
+    cursor: not-allowed !important;
+    pointer-events: none;
+}
+
+button.selectable {
+    flex: 1;
+    background-color: var(--gunmetal);
+    color: var(--timberwolf);
+    border: 2px solid var(--timberwolf);
+    padding: 0.5rem 0rem;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 200;
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+}
+
+button.selectable:hover {
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    transition: 0.1s all ease-in-out;
+}
+
+button.selectable.active {
+    color: var(--gold);
+    border: 2px solid var(--gold);
+}
+
+div[data-form-result] {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+div[data-form-result]>p.desc {
+    color: var(--timberwolf);
+}
+
+div[data-form-result]>p.sub {
+    color: var(--gunmetal);
+    font-size: 0.8rem;
+}
+
+div[data-form-result].active {
+    display: flex;
+}
+
+span.red {
+    color: var(--red);
+}
+
+span.gold {
+    color: var(--gold);
+}
+
+div.button-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.button.small {
+    width: 40rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.button.full {
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+.button.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#result-help {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+div.help-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+div.help-grid>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--gunmetal);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+}
+
+div.verification-code {
+    margin-top: 1rem;
+    padding: 2rem;
+    border-left: 8px solid var(--red);
+    background-color: var(--gunmetal);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.verification-code>.copy {
+    background-color: var(--rich-black);
+    padding-left: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.25rem;
+    outline: 4px solid var(--rich-black);
+}
+
+div.verification-code>.copy>button {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--timberwolf);
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+div.verification-code.suitable-upgrade {
+    flex-direction: column !important;
+    align-items: start;
+    justify-content: start;
+}
+
+.show-only-new-players {
+    display: none !important;
+}
+
+.show-only-new-players.active {
+    display: flex !important;
+}
+
+.show-only-upgrade {
+    display: none !important;
+}
+
+.show-only-upgrade.active {
+    display: flex !important;
+}
+
+
+@media only screen and (max-width: 960px) {
+    div.help-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

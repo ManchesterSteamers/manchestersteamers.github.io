@@ -8,8 +8,13 @@
     <link rel="icon" href="/assets/logo-fullsize.png" />
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="register.css">
 
-    <script src="caurosel.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="main.js" defer></script>
+    <script src="dynamic.js" defer></script>
+    <script src="register.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +22,7 @@
         <nav class="navbar-container">
             <div class="navbar">
                 <div class="left">
-                    <a class="logo" href="/">
+                    <a data-link class="logo" href="/">
                         <div class="wrapper">
                             <img src="/assets/logo-fullsize.png">
                         </div>
@@ -34,200 +39,347 @@
                 <div class="nav-links-container">
 
                     <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#eligibility">Eligibility</a></li>
-                        <li><a href="#committee">Committee</a></li>
-                        <li><a href="https://form.jotform.com/251352987669070" target="_blank">Register <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h6q.425 0 .713.288T12 4t-.288.713T11 5H5v14h14v-6q0-.425.288-.712T20 12t.713.288T21 13v6q0 .825-.587 1.413T19 21zM19 6.4L10.4 15q-.275.275-.7.275T9 15t-.275-.7t.275-.7L17.6 5H15q-.425 0-.712-.288T14 4t.288-.712T15 3h5q.425 0 .713.288T21 4v5q0 .425-.288.713T20 10t-.712-.288T19 9z" />
-                                </svg></a></li>
-                        <li><a href="https://www.instagram.com/manchester_steamers/" target="_blank"><svg
-                                    class="instagram" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20px"
-                                    viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;"
-                                    xml:space="preserve">
-                                    <g>
-                                        <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
-                          c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
-                          c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
-                          c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
-                                        <path
-                                            d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
-                          C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
-                          c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
-                                        <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
-                          c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
-                          C135.661,29.421,132.821,28.251,129.921,28.251z" />
-                                    </g>
-                                </svg></a></li>
+                        <li><a data-link href="/">Home</a></li>
+                        <li><a data-link href="/register">Register</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="welcome">
-        <div class="caurosel">
-            <img src="/assets/bg/IMGC4580-min.jpg" class="active">
-            <img src="/assets/bg/DSC_5899.jpg">
-            <img src="/assets/bg/DSC_6229.jpg">
-        </div>
-        <div class="dot-overlay"></div>
+    <!-- Page /home & / -->
+    <section id="home" class="section">
 
-        <div class="container">
-            <div class="text">
-                <h1>SIGN UP TODAY.</h1>
+        <div class="welcome">
+            <div class="caurosel">
+                <img src="/assets/bg/llama.png" class="active">
+            </div>
+            <div class="dot-overlay"></div>
 
-                <a class="button" href="https://form.jotform.com/251352987669070">
-                    REGISTER <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z" />
-                    </svg></a>
+            <div class="container">
+                <div class="text">
+                    <h1>SIGN UP TODAY.</h1>
+
+                    <a class="button" href="https://form.jotform.com/251352987669070">
+                        REGISTER <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z" />
+                        </svg></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="main-container">
-        <main>
-            <section id="about">
-                <h1 class="styled">About</h1>
-                <p class="subtitle">About the team.</p>
+        <div class="main-container">
+            <main>
+                <section id="about">
+                    <h1 class="styled">About</h1>
+                    <p class="subtitle">About the team.</p>
 
-                <p style="margin-top: 2rem;">The Manchester Steamers are a planned recreational team whose aim is to
-                    provide an inclusive, friendly space for <span class="highlight"><a
-                            href="https://www.manchestermetros.co.uk/">Manchester Metros</a></span> Players,
-                    Metro Alumni and members of the
-                    wider Metros Community to enjoy and to continue playing ice hockey after their studies.
-                </p>
+                    <p style="margin-top: 2rem;">The Manchester Steamers are a planned recreational team whose aim is to
+                        provide an inclusive, friendly space for <span class="highlight"><a
+                                href="https://www.manchestermetros.co.uk/">Manchester Metros</a></span> Players,
+                        Metro Alumni and members of the
+                        wider Metros Community to enjoy and to continue playing ice hockey after their studies.
+                    </p>
 
-                <p style="margin-top: 1rem;">
-                    The aim is currently to operate over the off season, through 10 weeks of scrimmages from June to
-                    September, in order to establish and set the foundations of developing the team.​​
-                </p>
+                    <p style="margin-top: 1rem;">
+                        The aim is currently to operate over the off season, through 10 weeks of scrimmages from June to
+                        September, in order to establish and set the foundations of developing the team.​​
+                    </p>
 
-                <p style="margin-top: 1rem;">
-                    We are currently looking to gauge interest to begin the team, if you are interested, please complete
-                    the Google Form.
-                </p>
+                    <p style="margin-top: 1rem;">
+                        We are currently looking to gauge interest to begin the team, if you are interested, please
+                        complete
+                        the Google Form.
+                    </p>
 
-            </section>
+                </section>
 
-            <section id="eligibility">
-                <h1 class="styled">Eligibility</h1>
-                <p class="subtitle">Find out the requirements for joining us.</p>
+                <section id="eligibility">
+                    <h1 class="styled">Eligibility</h1>
+                    <p class="subtitle">Find out the requirements for joining us.</p>
 
-                <p style="margin-top: 2rem;">You must be an adult to play for us.</p>
-                <p style="margin-top: 0.5rem;">
-                    You must have some previous affiliation with the <span class="highlight"><a
-                            href="https://www.manchestermetros.co.uk/">Manchester Metros</a></span>.
-                    This could be a current Metros player, Former Metros player or Alumni, or a friend of the Metros
-                    community.
+                    <p style="margin-top: 2rem;">You must be an adult to play for us.</p>
+                    <p style="margin-top: 0.5rem;">
+                        You must have some previous affiliation with the <span class="highlight"><a
+                                href="https://www.manchestermetros.co.uk/">Manchester Metros</a></span>.
+                        This could be a current Metros player, Former Metros player or Alumni, or a friend of the Metros
+                        community.
 
-                    We can be somewhat flexible with this, so feel free to try!
-                </p>
+                        We can be somewhat flexible with this, so feel free to try!
+                    </p>
 
-            </section>
+                </section>
 
-            <section id="committee">
-                <h1 class="styled">The Committee</h1>
-                <p class="subtitle">Meet the team behind it.</p>
+                <section id="committee">
+                    <h1 class="styled">The Committee</h1>
+                    <p class="subtitle">Meet the team behind it.</p>
 
-                <div class="members">
-                    <div class="member">
-                        <div class="icon">
-                            <img src="/assets/members/grob.avif">
-                            <div class="dot-overlay" style="opacity: 0.2;"></div>
+                    <div class="members">
+                        <div class="member">
+                            <div class="icon">
+                                <img src="/assets/members/grob.avif">
+                                <div class="dot-overlay" style="opacity: 0.2;"></div>
+                            </div>
+                            <div class="info">
+                                <h1 class="title styled gold">CHAIR</h1>
+                                <p>Alexander Grob</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <h1 class="title styled gold">CHAIR</h1>
-                            <p>Alexander Grob</p>
+
+                        <div class="member">
+                            <div class="icon">
+                                <img src="/assets/members/oli.avif">
+                                <div class="dot-overlay" style="opacity: 0.2;"></div>
+                            </div>
+                            <div class="info">
+                                <h1 class="title styled gold">VICE CHAIR</h1>
+                                <p>Oliver Taylor</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <div class="icon">
+                                <img src="/assets/members/john.avif">
+                                <div class="dot-overlay" style="opacity: 0.2;"></div>
+                            </div>
+                            <div class="info">
+                                <h1 class="title styled gold">SECRETARY</h1>
+                                <p>John McSwiggan</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <div class="icon">
+                                <img src="/assets/members/meng.avif">
+                                <div class="dot-overlay" style="opacity: 0.2;"></div>
+                            </div>
+                            <div class="info">
+                                <h1 class="title styled gold">TREASURER</h1>
+                                <p>Xavier Meng</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <div class="icon">
+                                <img src="/assets/members/matt.avif">
+                                <div class="dot-overlay" style="opacity: 0.2;"></div>
+                            </div>
+                            <div class="info">
+                                <h1 class="title styled gold">FIXTURES & MEMBERSHIP</h1>
+                                <p>Matthew McConville</p>
+                            </div>
+                        </div>
+
+
+                        <div class="member">
+                            <div class="icon">
+                                <img src="/assets/members/ellen.avif">
+                                <div class="dot-overlay" style="opacity: 0.2;"></div>
+                            </div>
+                            <div class="info">
+                                <h1 class="title styled gold">SOCIAL & KIT SECRETARY</h1>
+                                <p>Ellen Tyrer</p>
+                            </div>
+                        </div>
+
+                        <div></div>
+
+                        <div class="member">
+                            <div class="icon">
+                                <img src="/assets/members/raph.avif">
+                                <div class="dot-overlay" style="opacity: 0.2;"></div>
+                            </div>
+                            <div class="info">
+                                <h1 class="title styled gold">VICE TREASURER</h1>
+                                <p>Raph Noyer</p>
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="member">
-                        <div class="icon">
-                            <img src="/assets/members/oli.avif">
-                            <div class="dot-overlay" style="opacity: 0.2;"></div>
+                <section id="join">
+                    <h1 class="styled">Interested?</h1>
+                    <p class="subtitle">Let's get you started.</p>
+
+                    <a class="button" href="https://form.jotform.com/251352987669070">
+                        REGISTER NOW <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z" />
+                        </svg></a>
+                </section>
+            </main>
+        </div>
+
+    </section>
+
+    <!-- Page /register -->
+    <section id="register" class="section active">
+        <div class="main-container">
+            <main>
+                <section>
+                    <h1 class="styled gold">REGISTER</h1>
+
+                    <p style="margin-top: 2rem;">
+                        Please ensure you are <a class="link" href="/#about">eligible</a> before continuing.
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        Please follow these form options to determine the most appropriate EIHA form for you to register
+                        with us!
+                    </p>
+
+                    <div id="reg-form">
+                        <div class="button-group-selectable-one">
+                            <button class="selectable" data-next="reg-new-steamer">Full Registration</button>
+                            <button class="selectable" data-next="reg-trial">Trial Registration</button>
                         </div>
-                        <div class="info">
-                            <h1 class="title styled gold">VICE CHAIR</h1>
-                            <p>Oliver Taylor</p>
+
+                        <!-- If the player is only wanting a trial registration -->
+                        <div data-form-result id="reg-trial">
+                            <p>Players can register for a trial period of <b>28 consecutive days</b>.</p>
+                            <p>⚠️ This can only be done <span class="red">once</span>.</p>
+                            <p>⚠️ This will <span class="red">not</span> cover games, <span class="red">only
+                                    training</span>.</p>
+
+                            <div class="button-holder">
+                                <div class="button small centered">
+                                    <a href="https://www.cognitoforms.com/englishicehockeyassociation/playertrialform"
+                                        target="_blank">TRIAL FORM</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- This is for players returning to re-register. -->
+                        <!-- This is literally not possible for this season, but should be used for further seasons. -->
+                        <div data-form-result id="reg-current-steamer">
+                            <p class="desc">Are you <b>currently registered</b> with the Manchester Steamers?</p>
+                            <p class="sub">Select "yes" to re-register for the season.</p>
+                            <div class="button-group-selectable-one">
+                                <button class="selectable" data-next="reg-current-steamer">Yes</button>
+                                <button class="selectable" data-next="reg-trial">No</button>
+                            </div>
+                        </div>
+
+                        <!-- Are they a current Metros Player (BUIHA upgrade) -->
+                        <div data-form-result id="reg-new-steamer">
+                            <p class="desc">Are you <b>currently registered</b> with the Manchester Metros?</p>
+                            <div class="button-group-selectable-one">
+                                <button class="selectable" data-key="metros" data-value="true"
+                                    data-next="reg-new-steamer-recs">Yes</button>
+                                <button class="selectable" data-key="metros" data-value="false"
+                                    data-next="reg-new-steamer-recs">No</button>
+                            </div>
+                        </div>
+
+                        <!-- Find out how many EIHA teams they are registered with (2/3rd registration) -->
+                        <div data-form-result id="reg-new-steamer-recs">
+                            <p class="desc">How many <b>EIHA Recreational</b> teams are you registered with?</p>
+                            <div class="button-group-selectable-one">
+                                <button class="selectable" data-key="eihaTeams" data-value="0"
+                                    data-next="reg-current-steamer-complete">None</button>
+                                <button class="selectable" data-key="eihaTeams" data-value="1"
+                                    data-next="reg-current-steamer-complete">1</button>
+                                <button class="selectable" data-key="eihaTeams" data-value="2"
+                                    data-next="reg-current-steamer-complete">2</button>
+                                <button class="selectable" data-next="reg-too-many-eiha">3+</button>
+                            </div>
+                        </div>
+
+                        <!-- The player is already registered with 3 EIHA teams -->
+                        <!-- They should be instructed to reach out to myself or another member of the committee -->
+                        <div data-form-result id="reg-too-many-eiha">
+                            <h1>😔 OH NO!</h1>
+                            <p>
+                                The EIHA only allows players to be registered to a maximum of 3 recreational teams at a
+                                time.
+                            </p>
+                            <p>
+                                Please contact the Manchester Steamers committee if you still wish to join us.
+                                <br>
+                                <a class="link"
+                                    href="mailto:manchestersteamers@gmail.com">manchestersteamers@gmail.com</a>
+                                <a class="link"
+                                    href="https://www.instagram.com/manchester_steamers/">@manchester_steamers</a>
+                            </p>
+                        </div>
+
+                        <div data-form-result id="reg-current-steamer-complete">
+                            <h2 id="result-type"></h2>
+                            <p id="result-text"></p>
+
+                            <div class="show-only-new-players verification-code">
+                                <p>The Verification Code is</p>
+                                <div class="copy">
+                                    Slapshot2425
+                                    <button onclick="setClipboard('Slapshot2425')">
+                                        <i class="fa fa-clone" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="show-only-upgrade verification-code suitable-upgrade">
+                                <h3>Upgrade Option</h3>
+                                <p style="font-size: small;">What upgrade option should you choose?</p>
+                                <p id="result-upgrade-option"></p>
+                            </div>
+
+                            <div class="button-holder">
+                                <div class="button full centered">
+                                    <a target="_blank" id="result-link"></a>
+                                </div>
+                            </div>
+
+                            <div id="result-help">
+                                <h3>🤔 Questions about the form?</h3>
+                                <div class="help-grid">
+                                    <div class="show-only-new-players">
+                                        <h3>📲 Verification</h3>
+                                        <p>
+                                            The verification code is unique to our team and should be used in the <b>New
+                                                Player Form</b>.
+                                        </p>
+                                        <p>
+                                            The code can be found below.
+                                        </p>
+                                    </div>
+
+                                    <div class="show-only-upgrade">
+                                        <h3>🎫 Registration Transaction Number</h3>
+                                        <p>
+                                            This is a code that the EIHA and BUIHA provide when registering a player.
+                                        </p>
+                                        <p>
+                                            As an existing player, you can get this code by <span
+                                                class="gold">contacting your club</span>.
+                                        </p>
+                                        <p>
+                                            <span class="gold">Current Metros players</span> may contact John McSwiggan
+                                            for their code on Messenger
+                                            <a class="link"
+                                                href="https://www.facebook.com/john.mcswiggan">@john.mcswiggan</a>.
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h3>🙋 Still stumped?</h3>
+
+                                        <p>
+                                            Please message our Instagram or Facebook page
+                                            <a class="link"
+                                                href="https://www.instagram.com/manchester_steamers/">@manchester_steamers</a>
+                                            or our email address
+                                            <a class="link"
+                                                href="mailto:manchestersteamers@gmail.com">manchestersteamers@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="member">
-                        <div class="icon">
-                            <img src="/assets/members/john.avif">
-                            <div class="dot-overlay" style="opacity: 0.2;"></div>
-                        </div>
-                        <div class="info">
-                            <h1 class="title styled gold">SECRETARY</h1>
-                            <p>John McSwiggan</p>
-                        </div>
-                    </div>
-
-                    <div class="member">
-                        <div class="icon">
-                            <img src="/assets/members/meng.avif">
-                            <div class="dot-overlay" style="opacity: 0.2;"></div>
-                        </div>
-                        <div class="info">
-                            <h1 class="title styled gold">TREASURER</h1>
-                            <p>Xavier Meng</p>
-                        </div>
-                    </div>
-
-                    <div class="member">
-                        <div class="icon">
-                            <img src="/assets/members/matt.avif">
-                            <div class="dot-overlay" style="opacity: 0.2;"></div>
-                        </div>
-                        <div class="info">
-                            <h1 class="title styled gold">FIXTURES & MEMBERSHIP</h1>
-                            <p>Matthew McConville</p>
-                        </div>
-                    </div>
-
-
-                    <div class="member">
-                        <div class="icon">
-                            <img src="/assets/members/ellen.avif">
-                            <div class="dot-overlay" style="opacity: 0.2;"></div>
-                        </div>
-                        <div class="info">
-                            <h1 class="title styled gold">SOCIAL & KIT SECRETARY</h1>
-                            <p>Ellen Tyrer</p>
-                        </div>
-                    </div>
-
-                    <div></div>
-
-                    <div class="member">
-                        <div class="icon">
-                            <img src="/assets/members/raph.avif">
-                            <div class="dot-overlay" style="opacity: 0.2;"></div>
-                        </div>
-                        <div class="info">
-                            <h1 class="title styled gold">VICE TREASURER</h1>
-                            <p>Raph Noyer</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="join">
-                <h1 class="styled">Interested?</h1>
-                <p class="subtitle">Let's get you started.</p>
-
-                <a class="button" href="https://form.jotform.com/251352987669070">
-                    REGISTER NOW <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z" />
-                    </svg></a>
-            </section>
-        </main>
-    </div>
+                </section>
+            </main>
+        </div>
+    </section>
 
     <div class="footer-container">
         <footer id="footer">
@@ -276,5 +428,15 @@
         </footer>
     </div>
 </body>
+
+<style>
+    .section.active {
+        display: block;
+    }
+
+    .section {
+        display: none;
+    }
+</style>
 
 </html>
