@@ -266,21 +266,25 @@ footer>.right .instagram {
     fill: var(--rich-black)
 }
 
-h1 {
+h1, h2 {
     font-family: 'Russo One', sans-serif;
     letter-spacing: 2px;
 }
 
-h1.styled {
+h1.styled, h2.styled {
     font-weight: 900;
     font-style: italic;
     font-size: 2rem;
     letter-spacing: 3px;
 }
 
-h1.styled.gold {
+h1.styled.gold, h2.styled.gold {
     color: var(--gold-metallic);
     text-shadow: -2px 0px 0px var(--gold);
+}
+
+.styled.no-space {
+    letter-spacing: normal;
 }
 
 p.subtitle {
@@ -313,7 +317,7 @@ p.subtitle {
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-section {
+section:not(.section) {
     margin-top: 8rem;
     margin-bottom: 4rem;
 }
