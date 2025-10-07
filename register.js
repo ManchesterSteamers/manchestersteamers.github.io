@@ -31,7 +31,7 @@ function currentSteamerCompleteCallback(element) {
 
     if (data.upgrade) {
 
-        a.href = "https://www.cognitoforms.com/EnglishIceHockeyAssociation/EIHRecreationalRegistrationUpgradeApplication"
+        a.href = "https://www.cognitoforms.com/EnglishIceHockeyAssociation/EIHRecreationalRegistrationUpgradeApplication2526"
         a.innerHTML = `UPGRADE FORM <i class="fa fa-external-link" aria-hidden="true"></i>`;
 
         document.querySelectorAll('.show-only-upgrade').forEach((element) => {
@@ -69,7 +69,7 @@ function currentSteamerCompleteCallback(element) {
         }
 
     } else {
-        a.href = "https://www.cognitoforms.com/EnglishIceHockeyAssociation/EIHRecSectionPlayerRegistrationApplicationForm";
+        a.href = "https://www.cognitoforms.com/EnglishIceHockeyAssociation/EIHRecSectionPlayerRegistrationApplicationForm2526";
         a.innerHTML = `NEW PLAYER FORM <i class="fa fa-external-link" aria-hidden="true"></i>`;
 
         element.querySelector('#result-type').innerText = "✨ New Players";
